@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActiveObjectClass>
+	<Id>1337243522695</Id>
+	<Name><![CDATA[Main]]></Name>
+	<StartupCode><![CDATA[navigate( viewCharts);]]></StartupCode>
+	<Generic>false</Generic>
+	<GenericParameter>
+		<Id>1413271630233</Id>
+		<Name><![CDATA[1413271630233]]></Name>
+		<GenericParameterValue Class="CodeValue">
+			<Code><![CDATA[T]]></Code>
+		</GenericParameterValue>
+		<GenericParameterLabel>Generic parameters:</GenericParameterLabel>
+	</GenericParameter>
+	<FlowChartsUsage>ENTITY</FlowChartsUsage>
+	<SamplesToKeep>100</SamplesToKeep>
+	<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+	<ElementsLimitValue>100</ElementsLimitValue>
+	<MakeDefaultViewArea>true</MakeDefaultViewArea>
+	<SceneGridColor/>
+	<SceneBackgroundColor>-4144960</SceneBackgroundColor>
+	<SceneSkybox>null</SceneSkybox>
+	<AgentProperties>
+		<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+		<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+		<RotateAnimationVertically>false</RotateAnimationVertically>
+		<VelocityCode Class="CodeUnitValue">
+			<Code><![CDATA[5]]></Code>
+			<Unit Class="SpeedUnits">KPH</Unit>
+		</VelocityCode>
+		<PhysicalLength Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="LengthUnits">METER</Unit>
+		</PhysicalLength>
+		<PhysicalWidth Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="LengthUnits">METER</Unit>
+		</PhysicalWidth>
+		<PhysicalHeight Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="LengthUnits">METER</Unit>
+		</PhysicalHeight>
+	</AgentProperties>
+	<EnvironmentProperties>
+		<EnableSteps>false</EnableSteps>
+		<StepDurationCode Class="CodeUnitValue">
+			<Code><![CDATA[1.0]]></Code>
+			<Unit Class="TimeUnits">DAY</Unit>
+		</StepDurationCode>
+		<SpaceType>CONTINUOUS</SpaceType>
+		<WidthCode>610</WidthCode>
+		<HeightCode>510</HeightCode>
+		<ZHeightCode>0</ZHeightCode>
+		<ColumnsCountCode>100</ColumnsCountCode>
+		<RowsCountCode>100</RowsCountCode>
+		<NeigborhoodType>MOORE</NeigborhoodType>
+		<LayoutType>RANDOM</LayoutType>
+		<NetworkType>USER_DEF</NetworkType>
+		<ConnectionsPerAgentCode>2</ConnectionsPerAgentCode>
+		<ConnectionsRangeCode>50</ConnectionsRangeCode>
+		<NeighborLinkFractionCode>0.95</NeighborLinkFractionCode>
+		<MCode>10</MCode>
+	</EnvironmentProperties>
+	<DatasetsCreationProperties>
+		<AutoCreate>true</AutoCreate>
+		<Id>1337243509993</Id>
+		<OccurrenceAtTime>true</OccurrenceAtTime>
+		<OccurrenceDate>1413273600000</OccurrenceDate>
+		<OccurrenceTime Class="CodeUnitValue">
+			<Code><![CDATA[0]]></Code>
+			<Unit Class="TimeUnits">DAY</Unit>
+		</OccurrenceTime>
+		<RecurrenceCode Class="CodeUnitValue">
+			<Code><![CDATA[1]]></Code>
+			<Unit Class="TimeUnits">DAY</Unit>
+		</RecurrenceCode>
+	</DatasetsCreationProperties>
+	<ScaleRuler>
+		<Id>1413271630328</Id>
+		<Name><![CDATA[scale]]></Name>
+		<X>0</X>
+		<Y>-150</Y>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<Length>100</Length>
+		<Rotation>0</Rotation>
+		<ScaleType>BASED_ON_LENGTH</ScaleType>
+		<ModelLength>250</ModelLength>
+		<LengthUnits>METER</LengthUnits>
+		<Scale>10</Scale>
+		<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+	</ScaleRuler>
+	<CurrentLevel>1716289519518</CurrentLevel>
+	<ConnectionsId>1413271630327</ConnectionsId>
+	<Outputs>
+		<Output>
+			<Id>1509370738010</Id>
+			<Name><![CDATA[averageRevenue]]></Name>
+			<X>-290</X>
+			<Y>2380</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<Value Class="CodeValue">
+				<Code><![CDATA[endYearRevenue.getYMean()]]></Code>
+			</Value>
+			<ComputationMoment>ON_SIMULATION_END</ComputationMoment>
+			<ComputationTimeCode Class="CodeUnitValue">
+				<Code/>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</ComputationTimeCode>
+			<ComputationDate>1509436800000</ComputationDate>
+		</Output>
+		<Output>
+			<Id>1509370867513</Id>
+			<Name><![CDATA[averageExpenses]]></Name>
+			<X>-290</X>
+			<Y>2400</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<Value Class="CodeValue">
+				<Code><![CDATA[endYearExpenses.getYMean()]]></Code>
+			</Value>
+			<ComputationMoment>ON_SIMULATION_END</ComputationMoment>
+			<ComputationTimeCode Class="CodeUnitValue">
+				<Code/>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</ComputationTimeCode>
+			<ComputationDate>1509436800000</ComputationDate>
+		</Output>
+		<Output>
+			<Id>1509370906613</Id>
+			<Name><![CDATA[averageProfit]]></Name>
+			<X>-290</X>
+			<Y>2420</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<Type><![CDATA[double]]></Type>
+			<UnitType>NONE</UnitType>
+			<Value Class="CodeValue">
+				<Code><![CDATA[endYearProfit.getYMean()]]></Code>
+			</Value>
+			<ComputationMoment>ON_SIMULATION_END</ComputationMoment>
+			<ComputationTimeCode Class="CodeUnitValue">
+				<Code/>
+				<Unit Class="TimeUnits">SECOND</Unit>
+			</ComputationTimeCode>
+			<ComputationDate>1509436800000</ComputationDate>
+		</Output>
+	</Outputs>
+	<Variables xmlns:al="http://anylogic.com"/>
+	<Events xmlns:al="http://anylogic.com"/>
+	<Functions xmlns:al="http://anylogic.com"/>
+	<AnalysisData>
+		<Statistics>
+			<Id>1338209863078</Id>
+			<Name><![CDATA[statsHEqOnRunning]]></Name>
+			<X>-290</X>
+			<Y>2180</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385667</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>heavyequipment.OnRunning()</ValueCode>
+		</Statistics>
+		<Statistics>
+			<Id>1338210220717</Id>
+			<Name><![CDATA[statsHEqOnPM]]></Name>
+			<X>-290</X>
+			<Y>2200</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385669</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>heavyequipment.OnPM()</ValueCode>
+		</Statistics>
+		<Statistics>
+			<Id>1338210245970</Id>
+			<Name><![CDATA[statsHEqFailed]]></Name>
+			<X>-290</X>
+			<Y>2240</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385671</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>heavyequipment.Failed()</ValueCode>
+		</Statistics>
+		<Statistics>
+			<Id>1338210260135</Id>
+			<Name><![CDATA[statsHEqOnService]]></Name>
+			<X>-290</X>
+			<Y>2220</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385673</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>heavyequipment.OnService()</ValueCode>
+		</Statistics>
+		<Statistics>
+			<Id>1338211096483</Id>
+			<Name><![CDATA[statsMaintServStandByAtOffice]]></Name>
+			<X>-290</X>
+			<Y>2300</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385675</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>maintservice.StandByAtOffice()</ValueCode>
+		</Statistics>
+		<Statistics>
+			<Id>1338211120180</Id>
+			<Name><![CDATA[statsMaintServOnTheWay]]></Name>
+			<X>-290</X>
+			<Y>2320</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385677</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>maintservice.OnTheWay()</ValueCode>
+		</Statistics>
+		<Statistics>
+			<Id>1338211131923</Id>
+			<Name><![CDATA[statsMaintServWorkingAtField]]></Name>
+			<X>-290</X>
+			<Y>2340</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385679</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>maintservice.WorkingAtField()</ValueCode>
+		</Statistics>
+		<DataSet>
+			<Id>1338285424291</Id>
+			<Name><![CDATA[endYearHEqOnRunning]]></Name>
+			<X>-610</X>
+			<Y>2180</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385681</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285532663</Id>
+			<Name><![CDATA[endYearHEqOnPM]]></Name>
+			<X>-610</X>
+			<Y>2200</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385683</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285544603</Id>
+			<Name><![CDATA[endYearHEqOnService]]></Name>
+			<X>-610</X>
+			<Y>2220</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385685</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285551829</Id>
+			<Name><![CDATA[endYearHEqFailed]]></Name>
+			<X>-610</X>
+			<Y>2240</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385687</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285707409</Id>
+			<Name><![CDATA[endYearMaintServStandByAtOffice]]></Name>
+			<X>-610</X>
+			<Y>2300</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385689</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285714355</Id>
+			<Name><![CDATA[endYearMaintServOnTheWay]]></Name>
+			<X>-610</X>
+			<Y>2320</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385691</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285721981</Id>
+			<Name><![CDATA[endYearMaintServWorkingAtField]]></Name>
+			<X>-610</X>
+			<Y>2340</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385693</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285728763</Id>
+			<Name><![CDATA[endYearRevenue]]></Name>
+			<X>-610</X>
+			<Y>2380</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385695</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285737452</Id>
+			<Name><![CDATA[endYearExpenses]]></Name>
+			<X>-610</X>
+			<Y>2400</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385697</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<DataSet>
+			<Id>1338285746556</Id>
+			<Name><![CDATA[endYearProfit]]></Name>
+			<X>-610</X>
+			<Y>2420</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>false</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385699</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<FreezeXAxis>true</FreezeXAxis>
+			<SamplesToKeep>50</SamplesToKeep>
+		</DataSet>
+		<Statistics>
+			<Id>1338362276369</Id>
+			<Name><![CDATA[statsMaintServSize]]></Name>
+			<X>-290</X>
+			<Y>2280</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<AutoUpdate>true</AutoUpdate>
+			<RecurrenceProperties>
+				<Id>1741658385701</Id>
+				<OccurrenceAtTime>true</OccurrenceAtTime>
+				<OccurrenceDate>1413273600000</OccurrenceDate>
+				<OccurrenceTime Class="CodeUnitValue">
+					<Code><![CDATA[0]]></Code>
+					<Unit Class="TimeUnits">DAY</Unit>
+				</OccurrenceTime>
+				<RecurrenceCode Class="CodeUnitValue">
+					<Code><![CDATA[StatsUpdatePeriodMinutes]]></Code>
+					<Unit Class="TimeUnits">MINUTE</Unit>
+				</RecurrenceCode>
+			</RecurrenceProperties>
+			<Discrete>false</Discrete>
+			<ValueCode>maintservice.size()</ValueCode>
+		</Statistics>
+	</AnalysisData>
+	<AgentLinks>
+		<AgentLink>
+			<Id>1413271630327</Id>
+			<Name><![CDATA[connections]]></Name>
+			<X>50</X>
+			<Y>-50</Y>
+			<Label>
+				<X>15</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<HandleReceiveInConnections>false</HandleReceiveInConnections>
+			<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+			<AgentLinkBidirectional>true</AgentLinkBidirectional>
+			<MessageType>Object</MessageType>
+			<LineStyle>SOLID</LineStyle>
+			<LineWidth>1</LineWidth>
+			<LineColor>-16777216</LineColor>
+			<LineZOrder>UNDER_AGENTS</LineZOrder>
+			<LineArrow>NONE</LineArrow>
+			<LineArrowPosition>END</LineArrowPosition>
+		</AgentLink>
+	</AgentLinks>
+	<EmbeddedObjects xmlns:al="http://anylogic.com"/>
+	<Presentation>
+		<Level>
+			<Id>1716289519518</Id>
+			<Name><![CDATA[level]]></Name>
+			<X>0</X>
+			<Y>0</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>true</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+			<Z>0</Z>
+			<LevelVisibility>ALWAYS_SHOW</LevelVisibility>
+			<Presentation xmlns:al="http://anylogic.com"/>
+		</Level>
+	</Presentation>
+	<Areas>
+		<Area>
+			<Id>1337345773557</Id>
+			<Name><![CDATA[view3D]]></Name>
+			<X>0</X>
+			<Y>1000</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Title>3D</Title>
+			<Width>1020</Width>
+			<Height>760</Height>
+		</Area>
+		<Area>
+			<Id>1337346010294</Id>
+			<Name><![CDATA[view2D]]></Name>
+			<X>0</X>
+			<Y>0</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Title>2D</Title>
+			<Width>1020</Width>
+			<Height>760</Height>
+		</Area>
+		<Area>
+			<Id>1337347893019</Id>
+			<Name><![CDATA[viewCharts]]></Name>
+			<X>0</X>
+			<Y>2080</Y>
+			<Label>
+				<X>0</X>
+				<Y>-10</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>false</ShowLabel>
+			<Title>Charts</Title>
+			<Width>1020</Width>
+			<Height>760</Height>
+		</Area>
+	</Areas>
+</ActiveObjectClass>

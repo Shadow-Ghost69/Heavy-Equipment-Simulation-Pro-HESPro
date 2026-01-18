@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelResources>
+	<Resource>
+		<Id>1337243509997</Id>
+		<Path>Cover.jpg</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
+	<Resource>
+		<Id>1741658385852</Id>
+		<Path>3d/worker.dae</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
+	<Resource>
+		<Id>1741684249413</Id>
+		<Path>3d/tree_1.dae</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
+	<Resource>
+		<Id>1741684344776</Id>
+		<Path>3d/tree_2.dae</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
+	<Resource>
+		<Id>1741684364986</Id>
+		<Path>3d/tree_3.dae</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
+	<Resource>
+		<Id>1768721713806</Id>
+		<Path>69.png</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
+</ModelResources>
